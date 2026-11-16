@@ -1,0 +1,13 @@
+[package]
+name = "obsidian-abi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Obsidian Calling Convention & Stack Frame ABI Oracle (SysV64, Win64, AAPCS64, Darwin ARM64, SystemZ s390x, M68k, RISC-V)"
+
+[dependencies]
+obsidian-ir.workspace = true
+obsidian-isa-x86.workspace = true
+obsidian-isa-systemz.workspace = true
+obsidian-isa-m68k.workspace = true
+obsidian-isa-aarch64.workspace = true

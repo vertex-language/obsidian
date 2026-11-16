@@ -1,0 +1,13 @@
+[package]
+name = "obsidian-codegen-x86"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Obsidian x86-64 Code Generator — lowers obsidian-ir into obsidian-isa-x86 machine code and obsidian-obj Artifacts"
+
+[dependencies]
+obsidian-ir.workspace = true
+obsidian-abi.workspace = true
+obsidian-regalloc.workspace = true
+obsidian-obj.workspace = true
+obsidian-isa-x86.workspace = true

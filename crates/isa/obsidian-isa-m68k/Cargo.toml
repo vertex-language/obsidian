@@ -1,0 +1,9 @@
+[package]
+name = "obsidian-isa-m68k"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Pure 1:1 Motorola 680x0 (M68k) silicon ISA specification: split Data/Address register banks, CCR flags, 6-bit Effective Addressing modes, opcodes, micro-architectural properties, and stateless big-endian word-stream encoding."
+readme = "README.md"
+
+[dependencies]

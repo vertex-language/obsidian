@@ -1,0 +1,17 @@
+[package]
+name = "obsidian-ld"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Obsidian Built-In In-Memory Linker — merges Artifacts, resolves cross-module relocations, and emits ELF/Mach-O/PE executables"
+
+[dependencies]
+obsidian-ir.workspace = true
+obsidian-obj.workspace = true
+obsidian-elf.workspace = true
+obsidian-macho.workspace = true
+obsidian-coff.workspace = true
+
+[dev-dependencies]
+obsidian-codegen-x86.workspace = true
+obsidian-codegen-aarch64.workspace = true

@@ -1,0 +1,9 @@
+[package]
+name = "obsidian-isa-aarch64"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Pure 1:1 ARM64 (AArch64) silicon ISA specification: registers (with encoding 31 SP/XZR split), NZCV flags, barrel shifters, N:immr:imms bitmask immediates, LDP/STP addressing, opcodes, micro-architectural rules, and stateless 32-bit instruction encoding."
+readme = "README.md"
+
+[dependencies]

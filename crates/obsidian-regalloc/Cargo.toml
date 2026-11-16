@@ -1,0 +1,14 @@
+[package]
+name = "obsidian-regalloc"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Obsidian Hardware-Aware Register Allocator — linear-scan live intervals, 2-op destructive ties, 4-reg false-dependency rotation, and FrameLayout integration"
+
+[dependencies]
+obsidian-ir.workspace = true
+obsidian-abi.workspace = true
+obsidian-isa-x86.workspace = true
+obsidian-isa-systemz.workspace = true
+obsidian-isa-m68k.workspace = true
+obsidian-isa-aarch64.workspace = true

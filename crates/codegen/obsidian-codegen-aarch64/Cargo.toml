@@ -1,0 +1,13 @@
+[package]
+name = "obsidian-codegen-aarch64"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Obsidian AArch64 (ARM64) Code Generator — lowers obsidian-ir into obsidian-isa-aarch64 machine code and obsidian-obj Artifacts"
+
+[dependencies]
+obsidian-ir.workspace = true
+obsidian-abi.workspace = true
+obsidian-regalloc.workspace = true
+obsidian-obj.workspace = true
+obsidian-isa-aarch64.workspace = true

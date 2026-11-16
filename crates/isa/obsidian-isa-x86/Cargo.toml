@@ -1,0 +1,9 @@
+[package]
+name = "obsidian-isa-x86"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Pure 1:1 x86-64 silicon ISA specification: hardware registers, opcodes, micro-architectural properties, and stateless single-instruction encoding."
+readme = "README.md"
+
+[dependencies]

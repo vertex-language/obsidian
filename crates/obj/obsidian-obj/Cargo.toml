@@ -1,0 +1,9 @@
+[package]
+name = "obsidian-obj"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Obsidian Object Artifact, Section, Symbol, and Relocation Model — bridges per-CPU codegen to ELF, Mach-O, COFF, Wasm, Linker, and JIT"
+
+[dependencies]
+obsidian-ir.workspace = true

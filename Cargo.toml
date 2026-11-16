@@ -1,0 +1,80 @@
+[package]
+name = "obsidian"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Obsidian Compiler Backend Suite — 1:1 Silicon ISAs, .obs Bedrock SSA IR, Hardware-Aware RegAlloc, Per-CPU Codegen, and From-Scratch ELF/Mach-O/COFF/LD"
+
+[dependencies]
+obsidian-ir.workspace = true
+obsidian-abi.workspace = true
+obsidian-regalloc.workspace = true
+obsidian-obj.workspace = true
+obsidian-elf.workspace = true
+obsidian-macho.workspace = true
+obsidian-coff.workspace = true
+obsidian-ld.workspace = true
+obsidian-codegen-x86.workspace = true
+obsidian-codegen-aarch64.workspace = true
+obsidian-isa-x86.workspace = true
+obsidian-isa-systemz.workspace = true
+obsidian-isa-m68k.workspace = true
+obsidian-isa-aarch64.workspace = true
+
+[workspace]
+members = [
+    ".",
+    "crates/isa/obsidian-isa-x86",
+    "crates/isa/obsidian-isa-systemz",
+    "crates/isa/obsidian-isa-m68k",
+    "crates/isa/obsidian-isa-aarch64",
+    "crates/obsidian-ir",
+    "crates/obsidian-abi",
+    "crates/obsidian-regalloc",
+    "crates/obj/obsidian-obj",
+    "crates/obj/obsidian-elf",
+    "crates/obj/obsidian-macho",
+    "crates/obj/obsidian-coff",
+    "crates/obj/obsidian-ld",
+    "crates/codegen/obsidian-codegen-x86",
+    "crates/codegen/obsidian-codegen-aarch64",
+]
+default-members = [
+    ".",
+    "crates/isa/obsidian-isa-x86",
+    "crates/isa/obsidian-isa-systemz",
+    "crates/isa/obsidian-isa-m68k",
+    "crates/isa/obsidian-isa-aarch64",
+    "crates/obsidian-ir",
+    "crates/obsidian-abi",
+    "crates/obsidian-regalloc",
+    "crates/obj/obsidian-obj",
+    "crates/obj/obsidian-elf",
+    "crates/obj/obsidian-macho",
+    "crates/obj/obsidian-coff",
+    "crates/obj/obsidian-ld",
+    "crates/codegen/obsidian-codegen-x86",
+    "crates/codegen/obsidian-codegen-aarch64",
+]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0 OR MIT"
+
+[workspace.dependencies]
+obsidian-isa-x86 = { path = "crates/isa/obsidian-isa-x86" }
+obsidian-isa-systemz = { path = "crates/isa/obsidian-isa-systemz" }
+obsidian-isa-m68k = { path = "crates/isa/obsidian-isa-m68k" }
+obsidian-isa-aarch64 = { path = "crates/isa/obsidian-isa-aarch64" }
+obsidian-ir = { path = "crates/obsidian-ir" }
+obsidian-abi = { path = "crates/obsidian-abi" }
+obsidian-regalloc = { path = "crates/obsidian-regalloc" }
+obsidian-obj = { path = "crates/obj/obsidian-obj" }
+obsidian-elf = { path = "crates/obj/obsidian-elf" }
+obsidian-macho = { path = "crates/obj/obsidian-macho" }
+obsidian-coff = { path = "crates/obj/obsidian-coff" }
+obsidian-ld = { path = "crates/obj/obsidian-ld" }
+obsidian-codegen-x86 = { path = "crates/codegen/obsidian-codegen-x86" }
+obsidian-codegen-aarch64 = { path = "crates/codegen/obsidian-codegen-aarch64" }

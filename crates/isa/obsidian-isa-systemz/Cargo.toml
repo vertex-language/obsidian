@@ -1,0 +1,9 @@
+[package]
+name = "obsidian-isa-systemz"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Pure 1:1 IBM SystemZ (s390x / z/Architecture) silicon ISA specification: registers, condition masks, addressing modes, opcodes, micro-architectural properties, and stateless big-endian instruction encoding."
+readme = "README.md"
+
+[dependencies]

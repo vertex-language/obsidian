@@ -1,0 +1,8 @@
+[package]
+name = "obsidian-ir"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Obsidian SSA Bedrock Intermediate Representation (.obs) — 16-byte flat instruction arena, block parameters, and target-aware module builder"
+
+[dependencies]
